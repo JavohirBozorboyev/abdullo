@@ -136,6 +136,9 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
   nav .container {
     width: 100%;
     display: flex;
@@ -159,7 +162,7 @@
     justify-content: center;
   }
   .header .left img {
-    width: 50%;
+    width: 70%;
     border-radius: 20px;
   }
   .header .left span {
@@ -191,17 +194,97 @@
     justify-content: center;
     margin-top: 30px;
   }
-}
+  /* about media */
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  nav .container {
+  .about .container {
+    flex-direction: column;
+  }
+  .about .left {
+    width: 100%;
+  }
+  .about .container .center {
+    width: 100%;
+
+    margin: 60px 0;
+  }
+  .about .container .center img {
+    width: 250px;
+  }
+
+  .about .container .center::before {
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+  .about .container .center::after {
+    margin-right: 10px;
+    margin-bottom: -20px;
+  }
+
+  .about .container .right {
+    width: 100%;
+  }
+  /* skills media */
+  .skills .top {
     width: 95%;
-
+  }
+  .skills .bottom {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .skills .bottom svg {
+    width: 150px;
+  }
+  /* projects media */
+  .projects .box {
+    width: 90%;
+  }
+  /* conatct section */
+  .contact .top .box {
+    width: 90%;
+  }
+  .contact .bottom form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
+  .contact .bottom form input {
+    width: 90%;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  .contact .bottom form button {
+    padding: 8px 12px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  /* footer */
+  footer .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container p {
+    margin-top: 20px;
+  }
+}
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  nav .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  nav .right {
+    margin-top: 20px;
+  }
   .header .container {
     width: 100%;
     flex-direction: column;
@@ -216,7 +299,7 @@
     justify-content: center;
   }
   .header .left img {
-    width: 50%;
+    width: 70%;
     border-radius: 20px;
   }
   .header .left span {
@@ -247,5 +330,81 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+  }
+  /* about media */
+
+  .about .container {
+    flex-direction: column;
+  }
+  .about .left {
+    width: 100%;
+  }
+  .about .container .center {
+    width: 100%;
+
+    margin: 60px 0;
+  }
+  .about .container .center img {
+    width: 250px;
+  }
+
+  .about .container .center::before {
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+  .about .container .center::after {
+    margin-right: 10px;
+    margin-bottom: -20px;
+  }
+
+  .about .container .right {
+    width: 100%;
+  }
+  /* skills media */
+  .skills .top {
+    width: 95%;
+  }
+  .skills .bottom {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .skills .bottom svg {
+    width: 150px;
+  }
+  /* projects media */
+  .projects .box {
+    width: 90%;
+  }
+  /* conatct section */
+  .contact .top .box {
+    width: 90%;
+  }
+  .contact .bottom form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .bottom form input {
+    width: 90%;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  .contact .bottom form button {
+    padding: 8px 12px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  /* footer */
+  footer .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container p {
+    margin-top: 20px;
   }
 }
